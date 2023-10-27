@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>me</title>
+    <script>
+        function setName(){
+            const nameField = document.getElementById("username");
+            const name = nameField.value;
+            const title = document.getElementById("username-p");
+            title.innerText = name + " Profile";
+        }
+
+        function setprofile(){
+            const imgField = document.getElementById("profile-img");
+            const img = imgField.value;
+            const title = document.getElementById("profile-image");
+            title.style.backgroundImage = "url(" + img + ")";
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="profile">
+                <div class="profileimg" id="profile-image">
+                </div>
+                <div class="noti">99+</div>
+            </div>
+            <div class="username">
+                <a class="on-hover" href="https://www.google.com">
+                    <p style="font-size: x-large; font-weight: 500;" id="username-p">Supachai Binnok</p>
+                </a>
+            </div>
+            <div class="input-group">
+                <div><label style="font-weight: 500; font-size: large;">Username :</label><input style="margin-left: 10px;"
+                        type="text" id="username"><button style="margin-left: 10px;" id="setUser" onclick="setName()">Apply</button></div>
+                <div><label style="font-weight: 500; font-size: large;">Profile Image :</label><input
+                        style="margin-left: 10px;" type="text" id="profile-img"><button onclick="setprofile()"
+                        style="margin-left: 10px;" id="setImg">Apply</button></div>
+            </div>
+            <div class="gallery">
+                <div class="gal-img col-span"><img class="img1"></div>
+                <div class="gal-img"><img class="img1"></div>
+                <div class="gal-img"><img class="img1"></div>
+                <div class="gal-img"><img class="img1"></div>
+                <div class="gal-img row-span"><img class="img1"></div>
+                <div class="gal-img"><img class="img1"></div>
+                <div class="gal-img"><img class="img1"></div>
+                <div class="gal-img"><img class="img1"></div>
+                <div class="gal-img"><img class="img1"></div>
+                <div class="gal-img"><img class="img1"></div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
